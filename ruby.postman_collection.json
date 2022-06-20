@@ -1,0 +1,1436 @@
+{
+	"info": {
+		"_postman_id": "0fb9c1e2-2e72-4a13-8506-902242d505d6",
+		"name": "ruby-learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_make",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jeep\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/makes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"makes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add_make",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Jeep\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/makes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"makes"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"392e12f9fc93b73e849903b8e28bef21\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b91acc6b-fd86-4104-bb1d-fa44130aaa53"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.114568"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "sql.active_record;dur=15.905029296875, start_processing.action_controller;dur=0.1337890625, process_action.action_controller;dur=14.854248046875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Jeep\",\n    \"created_at\": \"2022-06-20T12:17:07.386Z\",\n    \"updated_at\": \"2022-06-20T12:17:07.386Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_makes_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nissan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/makes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"makes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_makes_list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Nissan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/makes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"makes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bdabc97c9b84e3b0c4d62ed0a6a01774\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "3ccb49fe-924b-45be-94a4-4a3110fc416f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.069487"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "sql.active_record;dur=10.336669921875, start_processing.action_controller;dur=0.117919921875, instantiation.active_record;dur=3.521240234375, process_action.action_controller;dur=7.83251953125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jeep\",\n        \"created_at\": \"2022-06-20T12:17:07.386Z\",\n        \"updated_at\": \"2022-06-20T12:17:07.386Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add_model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Grand Cherokee\",\n    \"make_id\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"models"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add_model",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Grand Cherokee\",\n    \"make_id\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/models",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"models"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"307bc57ca1902bd91c7124d8a9f46e9b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f1f01135-f5be-42c5-8c3f-1bca4b66ea3b"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.026993"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "sql.active_record;dur=9.591796875, start_processing.action_controller;dur=0.161865234375, instantiation.active_record;dur=0.06201171875, process_action.action_controller;dur=17.58154296875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Grand Cherokee\",\n    \"make_id\": 1,\n    \"created_at\": \"2022-06-20T12:17:14.139Z\",\n    \"updated_at\": \"2022-06-20T12:17:14.139Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_models_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Sunny\",\n    \"make_id\" : 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"models"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_models_list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sunny\",\n    \"make_id\" : 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/models",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"models"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ad22d77f54c95ddf03b0d2a300e3c0be\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e464ea67-50a2-4d28-a6cb-b6d8b5f4ac53"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.005320"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.131103515625, sql.active_record;dur=0.830322265625, instantiation.active_record;dur=0.063720703125, process_action.action_controller;dur=2.979248046875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Grand Cherokee\",\n        \"make_id\": 1,\n        \"created_at\": \"2022-06-20T12:17:14.139Z\",\n        \"updated_at\": \"2022-06-20T12:17:14.139Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add_new_car",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "images[]",
+							"contentType": "",
+							"type": "file",
+							"src": [
+								"/home/ola/Desktop/cars/grand cherokee/images.jpeg",
+								"/home/ola/Desktop/cars/grand cherokee/2022-jeep-grand-cherokee-summit-reserve-4xe-114-1632861119.jpg"
+							]
+						},
+						{
+							"key": "data",
+							"value": "{\n   \"latitude\":21.6071124,\n   \"longtitude\":39.2533922,\n   \"kilometers_traveled\":26.3,\n   \"model_id\":1\n}",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add_new_car",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images[]",
+									"contentType": "",
+									"type": "file",
+									"src": [
+										"/home/ola/Desktop/cars/grand cherokee/images.jpeg",
+										"/home/ola/Desktop/cars/grand cherokee/2022-jeep-grand-cherokee-summit-reserve-4xe-114-1632861119.jpg"
+									]
+								},
+								{
+									"key": "data",
+									"value": "{\n   \"latitude\":21.6071124,\n   \"longtitude\":39.2533922,\n   \"kilometers_traveled\":26.3,\n   \"model_id\":1\n}",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"87ab00171cb76c5dab8cd5431f0ae3de\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0193ec64-33b6-48e9-a974-ba0ab60e0901"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.080003"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.203369140625, sql.active_record;dur=23.037109375, instantiation.active_record;dur=0.110107421875, service_upload.active_storage;dur=1.80810546875, enqueue.active_job;dur=1.927734375, process_action.action_controller;dur=72.3427734375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"make\": \"Jeep\",\n    \"model\": \"Grand Cherokee\",\n    \"lat\": 21.6071124,\n    \"lon\": 39.2533922,\n    \"traveled_distance\": 26.3,\n    \"images\": [\n        \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d2c11a8bf0d9b74cf609122a8bcb51649127f0d/images.jpeg\",\n        \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d5447f54160fa822bbf07d1812907c256b8b8ab/2022-jeep-grand-cherokee-summit-reserve-4xe-114-1632861119.jpg\"\n    ],\n    \"availability_dates\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "get_cars_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars?lat=21.6867379&lon=39.2177112&distance=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "21.6867379"
+						},
+						{
+							"key": "lon",
+							"value": "39.2177112"
+						},
+						{
+							"key": "distance",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_cars_list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars?lat=21.6867379&lon=39.2177112&distance=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "21.6867379"
+								},
+								{
+									"key": "lon",
+									"value": "39.2177112"
+								},
+								{
+									"key": "distance",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9f9b9fd0-211d-4298-b4d3-a812bdfeb7c1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.022384"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.142578125, sql.active_record;dur=2.75537109375, instantiation.active_record;dur=4.72705078125, process_action.action_controller;dur=13.5537109375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "get_cars_list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars?lat=21.6867379&lon=39.2177112&distance=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "21.6867379"
+								},
+								{
+									"key": "lon",
+									"value": "39.2177112"
+								},
+								{
+									"key": "distance",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7d88b6b038020693a55a94196489d6a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5eded4c3-a499-4778-a075-7b088c5f06e4"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.047563"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1728515625, sql.active_record;dur=7.822021484375, instantiation.active_record;dur=0.681640625, process_action.action_controller;dur=25.728515625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"make\": \"Jeep\",\n        \"model\": \"Grand Cherokee\",\n        \"lat\": 21.6071124,\n        \"lon\": 39.2533922,\n        \"traveled_distance\": 26.3,\n        \"images\": [\n            \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d2c11a8bf0d9b74cf609122a8bcb51649127f0d/images.jpeg\",\n            \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d5447f54160fa822bbf07d1812907c256b8b8ab/2022-jeep-grand-cherokee-summit-reserve-4xe-114-1632861119.jpg\"\n        ],\n        \"availability_dates\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add availability date",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"available_from\": \"2022-06-25 21:11:01\",\n    \"available_to\": \"2022-06-30 21:11:01\",\n    \"car_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/availability_dates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"availability_dates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add availability date",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"available_from\": \"2022-06-25 21:11:01\",\n    \"available_to\": \"2022-06-30 21:11:01\",\n    \"car_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/availability_dates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"availability_dates"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47a8e0c57a0036e8af289e2028fed6a3\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "22a47d3f-a547-40ac-82a9-32c4e8c3c2ce"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009392"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.144775390625, sql.active_record;dur=3.90869140625, instantiation.active_record;dur=0.060302734375, process_action.action_controller;dur=7.23291015625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"available_from\": \"2022-06-25T21:11:01.000Z\",\n    \"available_to\": \"2022-06-30T21:11:01.000Z\",\n    \"car_id\": 1,\n    \"reserved\": false,\n    \"created_at\": \"2022-06-20T13:57:31.420Z\",\n    \"updated_at\": \"2022-06-20T13:57:31.420Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "make reservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"2022-06-20 21:11:01\",\n    \"to\": \"2022-06-21 21:11:01\",\n    \"car_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/reservations/make",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reservations",
+						"make"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "make reservation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"from\": \"2022-06-20 21:11:01\",\n    \"to\": \"2022-06-21 21:11:01\",\n    \"car_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reservations/make",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reservations",
+								"make"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "74835d75-dd33-434f-8c05-d69034de56d9"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004853"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.11865234375, sql.active_record;dur=0.84130859375, process_action.action_controller;dur=2.328125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "make reservation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"from\": \"2022-06-12 21:11:01\",\n    \"to\": \"2022-06-14 21:11:01\",\n    \"car_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reservations/make",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reservations",
+								"make"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f3351139e71a7f5f5036a5c1877e4d8\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1f8e57bf-62d2-418a-8f18-fdd975875780"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.043082"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "sql.active_record;dur=22.504150390625, start_processing.action_controller;dur=0.170654296875, instantiation.active_record;dur=0.220703125, process_action.action_controller;dur=34.44091796875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"availability_date_id\": 9,\n    \"created_at\": \"2022-06-20T13:57:43.242Z\",\n    \"updated_at\": \"2022-06-20T13:57:43.242Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_car_details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars/45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"45"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_car_details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dff339400a4fa35e16a40766f7c32d7e\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6ee4a19b-2333-4c24-be6e-490ba9ea08a1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.068513"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.12158203125, sql.active_record;dur=11.708984375, instantiation.active_record;dur=20.218017578125, process_action.action_controller;dur=66.170166015625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"make\": \"Jeep\",\n    \"model\": \"Grand Cherokee\",\n    \"lat\": 21.6071124,\n    \"lon\": 39.2533922,\n    \"traveled_distance\": 26.3,\n    \"images\": [\n        \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5d2c11a8bf0d9b74cf609122a8bcb51649127f0d/images.jpeg\",\n        \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3d5447f54160fa822bbf07d1812907c256b8b8ab/2022-jeep-grand-cherokee-summit-reserve-4xe-114-1632861119.jpg\"\n    ],\n    \"availability_dates\": [\n        {\n            \"available_from\": \"2022-06-10T21:11:01.000Z\",\n            \"available_to\": \"2022-06-12T21:11:01.000Z\",\n            \"reserved\": false\n        },\n        {\n            \"available_from\": \"2022-06-12T21:11:01.000Z\",\n            \"available_to\": \"2022-06-14T21:11:01.000Z\",\n            \"reserved\": true\n        },\n        {\n            \"available_from\": \"2022-06-14T21:11:01.000Z\",\n            \"available_to\": \"2022-06-15T21:11:01.000Z\",\n            \"reserved\": false\n        },\n        {\n            \"available_from\": \"2022-06-25T21:11:01.000Z\",\n            \"available_to\": \"2022-06-30T21:11:01.000Z\",\n            \"reserved\": false\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "delete car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars/30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_latest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/cars/latest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"latest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_cars_list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars?lat=21.6867379&lon=39.2177112&distance=500000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "21.6867379"
+								},
+								{
+									"key": "lon",
+									"value": "39.2177112"
+								},
+								{
+									"key": "distance",
+									"value": "500000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"644757b5db270aeea3d2a95197e03242\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "cfc953f2-1877-4e6b-a2d3-dc83d7cae06a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007475"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1279296875, sql.active_record;dur=2.120849609375, instantiation.active_record;dur=0.302001953125, process_action.action_controller;dur=5.312255859375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"make\": \"Kia\",\n        \"model\": \"Sportage\",\n        \"lat\": 21.6142967,\n        \"lon\": 39.2393133,\n        \"traveled_distance\": 65.3,\n        \"available_from\": \"2014-06-16T16:00:00.000Z\",\n        \"available_to\": \"2014-06-16T16:00:00.000Z\"\n    },\n    {\n        \"make\": \"Kia\",\n        \"model\": \"Cerato\",\n        \"lat\": 21.6071124,\n        \"lon\": 39.2533922,\n        \"traveled_distance\": 26.3,\n        \"available_from\": \"2014-06-16T16:00:00.000Z\",\n        \"available_to\": \"2014-06-16T16:00:00.000Z\"\n    },\n    {\n        \"make\": \"Kia\",\n        \"model\": \"Cerato\",\n        \"lat\": 21.6071124,\n        \"lon\": 39.2533922,\n        \"traveled_distance\": 26.3,\n        \"available_from\": \"2014-06-16T16:00:00.000Z\",\n        \"available_to\": \"2014-06-16T16:00:00.000Z\"\n    },\n    {\n        \"make\": \"Kia\",\n        \"model\": \"Cerato\",\n        \"lat\": 21.6071124,\n        \"lon\": 39.2533922,\n        \"traveled_distance\": 26.3,\n        \"available_from\": \"2014-06-16T16:00:00.000Z\",\n        \"available_to\": \"2014-06-16T16:00:00.000Z\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
