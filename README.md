@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# REST-APIs that simulate car rental system.
 
-Things you may want to cover:
+to run the application: 
 
-* Ruby version
+>rails db:migrate
+>
+>rails server
 
-* System dependencies
+for Database: PostgreSQL. Versions 9.3 and up are supported
+DB configurations
+>database: cars_rental_system
+>username: postgres
+>password: postgres
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
